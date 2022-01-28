@@ -1,0 +1,50 @@
+abstract class ain{
+    abstract void move();
+    abstract void eat();
+   
+
+    void label(){
+        System.out.println("animal is:");
+    }
+}
+
+class bird extends ain{
+    void move(){
+        System.out.println("bird moves");
+    }
+    void eat(){
+        System.out.println("eats");
+    }
+}
+class fish extends ain{
+    void move(){
+        System.out.println("fish moves:");
+    }
+    void eat(){
+        System.out.println("eat");
+    }
+
+        }
+
+        class testbird{
+    public static void main(String[] args){
+        ain mybird = new bird();
+
+
+        mybird.label();
+        mybird.eat();
+        mybird.move();
+        System.out.println(mybird);
+    }
+        }
+        class testfish{
+    public static void main(String[] args){
+        ain myfish = new fish();
+        myfish.label();
+        myfish.eat();
+        myfish.move();
+    }
+        }
+        
+        
+        
